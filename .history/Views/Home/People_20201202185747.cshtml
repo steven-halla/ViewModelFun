@@ -1,0 +1,6 @@
+<h2>List of people should appear if not you messed up</h2>
+@model List<User>
+    @foreach(User person in @Model)
+    {
+        <p>@person.FirstName @person.Lastname</p>
+    }
